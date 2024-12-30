@@ -39,3 +39,5 @@ def index(request):
 def success(request):
     return render(request, 'success.html')
 
+db_name = settings.DATABASES['default']['NAME']
+print(f'Database file: {db_name}')
