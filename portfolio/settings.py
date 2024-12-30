@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-=z7syhx-s4lg7c3^jrdfw78xody6=a^go72z&s(vy(q3ffr=bp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['52.66.244.1','*']
 
 
 # Application definition
@@ -80,15 +80,10 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',  # Set the engine to MySQL
-        'NAME': 'madhu',  # Your MySQL database name
-        'USER': 'root',  # MySQL username
-        'PASSWORD': 'Madhu@123',  # MySQL password
-        'HOST': 'localhost',  # Set to 'localhost' if MySQL is on the same machine
-        'PORT': '3306',  # Default MySQL port
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
